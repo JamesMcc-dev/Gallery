@@ -1,0 +1,54 @@
+/* Background image */
+body {
+    background-image: url('dance.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.header {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Container styling with white RGBA background */
+.container {
+    width: 60%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Special class for labels and legends */
+.special {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Form elements styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
