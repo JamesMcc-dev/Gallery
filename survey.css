@@ -1,54 +1,53 @@
-/* Background image */
 body {
-    background-image: url('dance.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: Arial, sans-serif;
+    background-image:url(dance.jpg); /* Make sure this file is in the same folder */
+    
+    margin: 0;
+    padding: 0;
 }
 
-/* Header styling */
 .header {
-    text-align: center;
-    font-size: 24px;
-    padding: 20px;
-    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
 }
 
-/* Container styling with white RGBA background */
 .container {
-    width: 60%;
-    margin: auto;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    margin: 30px auto;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5); /* 0.5 transparency */
     border-radius: 10px;
 }
 
-/* Special class for labels and legends */
 .special {
     font-weight: bold;
-    font-size: 16px;
+    color: #333;
 }
 
-/* Form elements styling */
 input[type="text"],
 input[type="email"],
 select,
 textarea {
     width: 100%;
     padding: 8px;
-    margin-top: 4px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 15px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
     border: none;
-    cursor: pointer;
+    border-radius: 4px;
+    cursor: pointer;*/
 }
 
-input[type="submit"]:hover {
+/*input[type="submit"]:hover {
     background-color: #45a049;
-}
+}*/

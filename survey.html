@@ -1,59 +1,48 @@
 <!DOCTYPE HTML>
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Survey</title>
-    <link rel="stylesheet" href="survey.css">
- <link rel="stylesheet" type="text/css" href="survey.css">
 
+
+<head>
+
+    <title>Music Survey</title>
+<link rel="stylesheet" type="text/css" href="survey.css">
 </head>
 <body>
-    <!-- Header -->
+
     <div class="header">
         <p>Survey Form</p>
     </div>
 
-    <!-- Container -->
     <div class="container">
-        <form action="https://formspree.io/f/xpwlzqwj" method="POST">
+        <form>
             <h2>Music Survey</h2>
 
             <label class="special" for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+            <input type="text" id="name" name="name"><br><br>
 
             <label class="special" for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email"><br><br>
 
-            <label class="special" for="genre">Favorite Genre:</label><br>
+            <label class="special" for="genre">Favorite Music Genre:</label><br>
             <select id="genre" name="genre">
-                <option value="pop">Pop</option>
                 <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="hiphop">Hip Hop</option>
                 <option value="jazz">Jazz</option>
                 <option value="classical">Classical</option>
-                <option value="hiphop">Hip Hop</option>
             </select><br><br>
 
-            <legend class="special">Do you play an instrument?</legend>
-            <input type="radio" id="yes" name="instrument" value="yes">
+            <label class="special">Do you play any instruments?</label><br>
+            <input type="radio" id="yes" name="instruments" value="yes">
             <label for="yes">Yes</label><br>
-            <input type="radio" id="no" name="instrument" value="no">
+            <input type="radio" id="no" name="instruments" value="no">
             <label for="no">No</label><br><br>
-
-            <legend class="special">Favorite Music Activities:</legend>
-            <input type="checkbox" id="singing" name="activities" value="singing">
-            <label for="singing">Singing</label><br>
-            <input type="checkbox" id="dancing" name="activities" value="dancing">
-            <label for="dancing">Dancing</label><br>
-            <input type="checkbox" id="composing" name="activities" value="composing">
-            <label for="composing">Composing</label><br><br>
 
             <label class="special" for="comments">Additional Comments:</label><br>
             <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
 
-            <input type="submit" value="Submit Survey">
+            <input type="submit" value="Submit">
         </form>
     </div>
+
 </body>
 </html>
